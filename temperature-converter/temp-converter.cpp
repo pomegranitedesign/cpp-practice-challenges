@@ -1,27 +1,25 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
   float lowerLimit = 0;
   float upperLimit = 0;
   int step = 0;
 
-  cout << "Please give in a lower limit, limit >= 0: ";
-  cin >> lowerLimit;
+  std::cout << "Please give in a lower limit, limit >= 0: ";
+  std::cin >> lowerLimit;
 
-  cout << "Please give in a higher limit, 10 > limit <= 50000: ";
-  cin >> upperLimit;
+  std::cout << "Please give in a higher limit, 10 > limit <= 50000: ";
+  std::cin >> upperLimit;
 
-  cout << "Please give in a step, 0 < step <= 10: ";
-  cin >> step;
+  std::cout << "Please give in a step, 0 < step <= 10: ";
+  std::cin >> step;
 
-  cout << endl;
-  cout << "Celsius         Fahrenheit" << endl;
-  cout << "-------         ----------" << endl;
+  std::cout << std::endl;
+  std::cout << "Celsius         Fahrenheit" << std::endl;
+  std::cout << "-------         ----------" << std::endl;
   for (float i = lowerLimit; i < upperLimit; i += step) {
     float fahrenheit = (i * 1.8) + 32.0;
-    cout << i << "              " << fahrenheit << endl;
+    std::cout << i << "              " << fahrenheit << std::endl;
   }
 
   return 0;
